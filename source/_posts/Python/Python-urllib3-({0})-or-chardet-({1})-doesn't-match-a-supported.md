@@ -2,7 +2,8 @@
 title: Python-urllib3-({0})-or-chardet-({1})-doesn't-match-a-supported
 categories: Python
 ---
-![WechatIMG2.jpeg](https://upload-images.jianshu.io/upload_images/15325592-8e82c0f2ff595578.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![image.png](https://upload-images.jianshu.io/upload_images/15325592-e6859c063b34fce9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->
 
 #  环境

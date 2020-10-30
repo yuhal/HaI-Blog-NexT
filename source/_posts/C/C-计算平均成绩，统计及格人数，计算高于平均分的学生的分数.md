@@ -2,8 +2,7 @@
 title: C-计算平均成绩，统计及格人数，计算高于平均分的学生的分数
 categories: C
 ---
-
-![image](https://upload-images.jianshu.io/upload_images/15325592-0cb1a1bc56aa9bf8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/15325592-c779aee843ab6273.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->
 
 从键盘输入10个学生的成绩，计算平均成绩，统计及格人数，计算高于平均分的学生的分数

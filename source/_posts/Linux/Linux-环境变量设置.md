@@ -7,6 +7,7 @@ categories: Linux
 <!-- more -->
 
 - 执行vim /etc/profile，添加如下：
+
 ```
 PATH=$PATH:路径# 多个用冒号':'分割
 export PATH
@@ -15,6 +16,7 @@ export PATH
 PATH=$PATH:/usr/local/php/bin
 export PATH
 ```
+
 - 保存退出
 
 - 执行source /etc/myprofile

@@ -4,9 +4,13 @@ categories: Linux
 ---
 ![image](https://upload-images.jianshu.io/upload_images/15325592-1ad501d72324e1af.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->
+
 - 执行```crontab -l```
+
 > 某次查看定时任务列表时，返回```no crontab for root```，因为这个 liunx 服务器第一次使用 crontab ，还没有生成对应的文件导致的。
+
 - 执行```crontab -e```
+
 ```
 no crontab for root - using an empty one
 
@@ -18,7 +22,9 @@ Select an editor.  To change later, run 'select-editor'.
 
 Choose 1-4 [1]:3
 ```
+
 > 选择一个编辑器，这里我选了```/usr/bin/vim.tiny```，回车。
+
 ```
 #  Edit this file to introduce tasks to be run by cron.
 # 
@@ -56,4 +62,5 @@ Choose 1-4 [1]:3
 ~
 "/tmp/crontab.iE77U6/crontab" 22L, 888C
 ```
+
 > 执行了```crontab -e```后，就生成了这个文件。

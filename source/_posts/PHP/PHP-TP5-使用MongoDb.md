@@ -3,33 +3,178 @@ title: PHP-TP5-使用MongoDb
 categories: PHP
 ---
 
-![image](https://upload-images.jianshu.io/upload_images/15325592-f8ce742d0afd8717?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![f8c943926119dfdb1c6f91f7c0ef459a496392b3.jpg](https://upload-images.jianshu.io/upload_images/15325592-3c7032e0a9af7a41.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->
-首先安装官方的mongodb扩展：
-找到对应的php版本的扩展
-然后，配置应用的数据库配置文件database.php的type参数为：
+
+
+#  插入文档
+
+- 插入单条
+
 ```
-'type' => '\think\mongo\connection',
+Db::table('users')
+->insert(
+	[
+		'name'=>'银太',
+		'arm'=>'巴波',
+		'height'=>160,
+		'mp'=>5000,
+	]
+);
 ```
-即可正常使用mongodb，例如：
-使用最新mongodb扩展
+
+- 批量插入
+
 ```
-db::name('demo')
-  ->find();
-db::name('demo')
-  ->field('id,name')
-  ->limit(10)
-  ->order('id','desc')
-  ->select();
+Db::table('users')
+->insertAll(
+	[
+		[
+			'name'=>'阿尔维斯',
+			'arm'=>'十三图腾锁链',
+			'height'=>165,
+			'mp'=>5000,
+		],
+		[
+			'name'=>'杰克',
+			'arm'=>'战斗银铲',
+			'height'=>158,
+			'mp'=>4000,
+		]
+	]
+);
 ```
-或者使用模型操作：
+
+#  更新文档
+
 ```
-user::get(1);
-user::all('1,2,3');
+Db::table('users')
+->where('name', '银太')
+->update(
+	[
+		'arm' => '果冻垫',
+	]
+);
 ```
-mongodb默认的主键是_id并且是一个objectid对象，如果需要和mysql一样使用id作为主键，可以如下参数：
+
+#  删除文档
+
 ```
-// 强制把_id转换为id
-'pk_convert_id' => true,
+Db::table('users')
+->where('name', '银太')
+->delete();
 ```
-手册https://api.yuhal.com/file/ThinkPHP.chm
+
+#  查询文档
+
+- 查询单个
+
+```
+Db::table('users')
+->find();
+```
+
+- 查询所有
+
+```
+Db::table('users')
+->select();
+```
+
+- AND 查询
+
+```
+Db::table('users')
+->where('name', '阿尔维斯')
+->where('arm', '十三图腾锁链')
+->select();
+```
+
+- 条件查询
+
+```
+Db::table('users')
+->where('height', '>=', 160)
+->select();
+```
+
+- 模糊查询
+
+```
+Db::table('users')
+->where('name', 'like', '阿尔')
+->select();
+```
+
+- 限制查询
+
+```
+Db::table('users')
+->limit(1)
+->select();
+```
+
+- 跳过查询
+
+```
+Db::table('users')
+->skip(5)
+->select();
+```
+
+- 排序查询
+
+```
+#   asc表示升序
+Db::table('users')
+->order('height', 'asc')
+->select();
+#   desc表示降序
+Db::table('users')
+->order('height', 'desc')
+->select();
+```
+
+- 聚合查询
+
+```
+#  单聚合查询
+Db::table('users')
+->aggregate('sum', 'mp');
+#  多聚合查询
+Db::table('users')
+->multiAggregate(
+	[
+		'sum' => 'mp',
+		'avg' => 'height',
+	],
+	['name']
+);
+```
+
+- 去重查询
+
+```
+Db::table('users')->distinct('name');
+```
+
+- 统计查询
+
+```
+Db::table('users')
+->where('mp', '>', 4000)
+->count();
+```
+
+#  查询集合
+
+```
+Db::listcollections();
+```
+
+#  手册
+
+- [ThinkPHP5.1完全开发手册](https://www.kancloud.cn/manual/thinkphp5_1/354135 "ThinkPHP5.1完全开发手册")
+
+- [ThinkPHP手册](https://api.yuhal.com/file/ThinkPHP.chm "ThinkPHP手册")
+

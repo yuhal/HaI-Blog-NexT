@@ -7,43 +7,63 @@ categories: Vue
 <!-- more -->
 
 # 环境
+
 - macOS 10.13.6
 
 # 安装homebrew
+
 - 执行命令
+
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
 - 查看版本```brew -v```
+
 ```
 Homebrew 2.1.11-135-g749b6de
 Homebrew/homebrew-core (git revision 9639f; last commit 2019-09-26)
 Homebrew/homebrew-cask (git revision 1dab; last commit 2019-09-27)
 ```
+
 # 安装nodejs
+
 - 执行命令
+
 ```
 brew install nodejs
 ```
+
 - 查看版本```node -v```
+
 ```
 v11.0.0
 ```
+
 # 安装npm
+
 - 执行命令
+
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
+
 - 查看版本```npm -v```
+
 ```
 6.12.0
 ```
+
 # 安装webpack
+
 - 执行命令
+
 ```
 cnpm install webpack -g
 ```
+
 - 查看版本```cnpm info webpack```
+
 ```
 webpack@4.41.3 | MIT | deps: 23 | versions: 626
 Packs CommonJs/AMD modules for the browser. Allows to split your codebase into multiple bundles, which can be loaded on demand. Support loaders to preprocess files, i.e. json, jsx, es7, css, less, ... and your custom stuff.
@@ -91,27 +111,40 @@ legacy: 1.15.0      webpack-2: 2.7.0
 
 published 2 days ago by sokra <tobias.koppers@googlemail.com>
 ```
+
 #  安装vue脚手架
+
 - 执行命令
+
 ```
 sudo npm install -g vue-cli
 ```
+
 - 查看版本```vue -V```
+
 ```
 2.9.6
 ```
+
 # 创建vue项目
+
 - 执行命令
+
 ```
 vue init webpack vuetest 
 // vuetest 是项目名称
 ```
+
 # 启动项目
+
 - 进入项目根目录
+
 ```
 cd vuetest
 ```
+
 - 执行命令```npm run dev```
+
 ```
 > vuetest@1.0.0 dev /private/var/HaI/vuetest
 > webpack-dev-server --inline --progress --config build/webpack.dev.conf.js
@@ -123,6 +156,7 @@ cd vuetest
 
  I  Your application is running here: http://localhost:8080
 ```
+
 - 请求 http://localhost:8080
 ![Screen Shot 2019-12-18 at 11.23.55 AM.png](https://upload-images.jianshu.io/upload_images/15325592-7516b2fefe7063e7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->

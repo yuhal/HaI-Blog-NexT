@@ -3,7 +3,7 @@ title: C-统计数字和大写字母和小写字母的个数
 categories: C
 ---
 
-![image](https://upload-images.jianshu.io/upload_images/15325592-d6cffd43e00f9001?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/15325592-b304b777aa02aa48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->
 
 从键盘输入一行字符，分别统计其中大写字母和小写字母的个数

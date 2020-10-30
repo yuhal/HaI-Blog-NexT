@@ -1,12 +1,13 @@
 ---
-title: Mysql-查询不重复的记录
-categories: Mysql
+title: MySQL-查询不重复的记录
+categories: MySQL
 ---
 ![1957C40DB512B1C6E93CCDD5F0D616D8.png](https://upload-images.jianshu.io/upload_images/15325592-63c3c5d09f360217.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->
 
 - 场景
-查询最近上课的同学信息，包括同学姓名、最近一次的上课时间、上课记录ID。
+
+> 查询最近上课的同学信息，包括同学姓名、最近一次的上课时间、上课记录ID。
 
 - 表结构
 
@@ -34,6 +35,7 @@ categories: Mysql
 |10|	光彦	|1589990400
 
 - 查询语句
+
 ```
 SELECT
 	max( class_record.time ) AS maxtime,
