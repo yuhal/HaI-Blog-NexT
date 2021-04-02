@@ -9,7 +9,7 @@ categories: Docker
 
 - docker 介绍
 
-> docker 是一个用 Go 语言实现的开源项目，可以很方便的创建和使用容器，docker 将程序以及程序所有的依赖都打包到 docker container（容器），这样打包的程序可以在任何环境都会有一致的表现。
+> docker 是一个用 Go 语言实现的开源项目，可以很方便的创建和使用容器，docker 将程序以及程序所有的依赖都打包到 docker container（容器），这样打包的程序可以在任何环境都会有一致的表现。快速安装 Docker 的教程参照 [Docker CE 镜像源站](https://developer.aliyun.com/article/110806)
 
 - 注册登录阿里云
 
@@ -17,7 +17,6 @@ categories: Docker
 
 ![Screen Shot 2020-08-18 at 11.49.02 AM.png](https://upload-images.jianshu.io/upload_images/15325592-0084a100c7c4cbbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->
-
 
 - 找到镜像加速器
 

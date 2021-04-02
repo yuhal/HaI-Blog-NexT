@@ -151,8 +151,9 @@ links_title: Links
 # links_layout: block
 links_layout: inline
 links:
-  Yohann's album: http://album.yuhal.com
-
+  super的博客: rongsp.com
+  SoTool开发工具: https://sotool.net
+  哈希: https://www.haxi.cc
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
@@ -533,7 +534,7 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: true
+  enable: false
   app_id: wrrQSoIjsS43ku5I9Roh1xDJ-gzGzoHsz
   app_key: VtBUjXGCHns66fJ8AvK66nBv
 

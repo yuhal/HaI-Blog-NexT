@@ -5,7 +5,6 @@ categories: SqlServer
 ![WechatIMG264.jpeg](https://upload-images.jianshu.io/upload_images/15325592-a23ffc41803a7547.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 <!-- more -->
 
-
 ### 1.SqlServer2012系统数据类型有哪些？
 
 | 数据类型 | 符号标识  |
